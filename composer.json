@@ -1,0 +1,12 @@
+{
+    "name": "rogerzanelato/solid",
+    "autoload": {
+        "psr-4": {
+            "RogerZanelato\\Solid\\": "src"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    }
+}
