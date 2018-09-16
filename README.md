@@ -15,7 +15,7 @@
 > Um objeto jamais deve ter mas de um fim ou propósito.
 
 Príncipio da responsabilidade única.
-**Exemplo: **Um objeto não deve armezenar registros e imprimir o resultado ou salvar estes dados. Outro exemplo, no repositório cada Tag HTML é representada por uma classe diferente que é responsável por retornar apenas aquela Tag.
+**Exemplo:** Um objeto não deve armezenar registros e imprimir o resultado ou salvar estes dados. Outro exemplo, no repositório cada Tag HTML é representada por uma classe diferente que é responsável por retornar apenas aquela Tag.
 
 ------------
 
@@ -25,7 +25,7 @@ Príncipio da responsabilidade única.
 
 Ou seja, devemos programar de forma que permita expandir as funcionalidades porém, para isso, as classes já feitas não devem precisar serem alteradas; devemos apenas fazer implementações não alterações.
 
-**Exemplo: **No repositório para alterar uma nova tag HTML não precisamos alterar a classe HTML, basta criar uma nova classe implementando a Tag.
+**Exemplo:** No repositório para alterar uma nova tag HTML não precisamos alterar a classe HTML, basta criar uma nova classe implementando a Tag.
 
 ------------
 
@@ -41,7 +41,7 @@ Como por exemplo, na geometria um quadrado é um tipo de retângulo, porém, com
 
 **OBS: O substituition do nome é referente que classes do mesmo tipo devem ser substituíveis entre si.**
 
-**Exemplos: **
+**Exemplos:**
 - http://dtidigital.com.br/blog/principios-solid-o-principio-da-substituicao-de-liskov/
 - https://code.tutsplus.com/pt/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710
 
@@ -56,7 +56,7 @@ Como por exemplo, na geometria um quadrado é um tipo de retângulo, porém, com
 
 Basicamente, não devemos criar interfaces que serão implementadas por classes que não irão de fato implementar todos os métodos do contrato, retornando um erro ou algo como "null" apenas para que a classe se encaixe na interface.
 
-**Exemplo: **Como exemplo de uso **incorreto**, podemos citar uma interface Passaro que possuí os métodos voa e anda. Seria perfeitamente normal implementarmos essa interface numa classe Andorinha, porém, e se tivermos uma classe Pinguim? Embora o pinguim seja um Pássaro, ele não voa! Devido à nossa estrutura, seríamos forçados a implementar o método voa na classe mesmo que ele não faça nada. Uma forma de contornar isso, é criar quebrar interfaces e utilizar de herança para aderir aos contextos. Como por exempo, Passaro, PassaroQueVoa, PassaroQueVoaENada, PassaroQueNada etc..
+**Exemplo:** Como exemplo de uso **incorreto**, podemos citar uma interface Passaro que possuí os métodos voa e anda. Seria perfeitamente normal implementarmos essa interface numa classe Andorinha, porém, e se tivermos uma classe Pinguim? Embora o pinguim seja um Pássaro, ele não voa! Devido à nossa estrutura, seríamos forçados a implementar o método voa na classe mesmo que ele não faça nada. Uma forma de contornar isso, é criar quebrar interfaces e utilizar de herança para aderir aos contextos. Como por exempo, Passaro, PassaroQueVoa, PassaroQueVoaENada, PassaroQueNada etc..
 
 ------------
 
@@ -68,4 +68,4 @@ Abstrações não deveriam depender de detalhes. Detalhes devem depender de abst
 
 Ou seja, devemos criar classes que sejam dependentes de abstrações, não de outras classes diretamente. Quando fazemos um método e instanciamos um objeto diretamente dentro dele, ou mesmo injetamos por parâmetro, estamos criando uma forte acoplação entre nosso método e essa classe. O correto é que quando temos uma classe X que utiliza uma classe Y internamente, abstraíamos essa classe Y em uma Interface e indiquemos-a na classe X. Dessa forma, não deixamos as classes diretamente acopladas e poderemos facilmente injetar novos comportamentos caso necessário.
 
-**Exemplo: **http://dtidigital.com.br/blog/principios-solid-o-principio-de-inversao-de-dependencia/
+**Exemplo:** http://dtidigital.com.br/blog/principios-solid-o-principio-de-inversao-de-dependencia/
